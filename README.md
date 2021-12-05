@@ -1,5 +1,1 @@
-## ``` Decentralized File Storage. ```
-
-
-## 🔧 Project Diagram:
-![Project Diagram](https://i.gyazo.com/2738ea6743a40036756b1b5714ab9fa8.png)
+Decentralized file storage system with ReactJS frontend and Solidity smart contracts backend. Deployed on simulated Ethereum blockchain with Ganache and Truffle suite. 
