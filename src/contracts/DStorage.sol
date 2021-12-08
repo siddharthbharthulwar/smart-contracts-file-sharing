@@ -7,6 +7,9 @@ contract DStorage {
   uint public fileCount = 0;
   // Mapping fileId=>Struct 
   mapping(uint => File) public files;
+
+  mapping(address => uint) public userFileCounts;
+
   // Struct
   struct File {
     uint fileId;
@@ -51,6 +54,8 @@ contract DStorage {
 
     fileCount ++;
     files[fileCount] = File(fileCount, _fileHash, _fileSize, _fileType, _fileName, _fileDescription, now, msg.sender);
+
+    userFileCounts[msg.sender] +=1;
 
     // Trigger an event
     emit FileUploaded(fileCount, _fileHash, _fileSize, _fileType, _fileName, _fileDescription, now, msg.sender );

@@ -1,1 +1,152 @@
-/* Styles go here */
+/* Styles for the React web app frontend portion of this project */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+/* universal styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*styles applied to the body*/
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #e0e0e0;
+  color: rgb(0, 0, 0);
+  
+}
+
+/*styles applied to the container class */
+.container {
+  max-width: 500px;
+  margin: 30px auto;
+  overflow: auto;
+  min-height: 300px;
+  border: 1px solid steelblue;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+#left{float:left;width:50px;}
+#right{float:right;width:100px;}
+
+/* styles applied to header component*/
+.header {
+  display: flex;
+  z-index: 1124120;
+  justify-content: space-between;
+  align-items: center;
+  text-align: justify;
+  margin-bottom: 20px;
+  background-color: #161b22;
+  position: sticky;
+  top: 0;
+  padding: 10px;
+}
+
+/*styles applied to subheader component */
+.subheader {
+
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -25px;
+  display: flex;
+  padding: 10px;
+  text-align: center;
+}
+
+/*styles applied tu botton*/
+.btn {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.task {
+  background: #f4f4f4;
+  margin: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.task.reminder {
+  border-left: 5px solid green;
+}
+
+.task h3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.add-form {
+  margin-bottom: 40px;
+}
+
+/* styles applied to forms */
+.form-control {
+  margin: 20px 0;
+}
+
+.form-control label {
+  display: block;
+}
+
+.form-control input {
+  width: 100%;
+  height: 40px;
+  margin: 5px;
+  padding: 3px 7px;
+  font-size: 17px;
+}
+
+.form-control-check {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-control-check label {
+  flex: 1;
+}
+
+.form-control-check input {
+  flex: 2;
+  height: 20px;
+}
+
+footer {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.h5 {
+
+  position: absolute;
+}
+
+.h2 {
+
+  position: absolute;
+}
